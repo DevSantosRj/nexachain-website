@@ -1,0 +1,112 @@
+/* Estilos para o seletor de idiomas */
+.language-selector-container {
+  position: relative;
+  margin-left: 16px;
+}
+
+.language-selector-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-selector-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius);
+  color: var(--gray-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.language-selector-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.language-selector-button i {
+  font-size: 0.875rem;
+}
+
+.language-selector-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 160px;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  z-index: 10;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.language-selector-dropdown-content.show {
+  display: block;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.language-option:hover {
+  background-color: var(--gray-light);
+}
+
+.language-option.active {
+  background-color: rgba(30, 86, 160, 0.1);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.language-flag {
+  width: 20px;
+  height: 14px;
+  margin-right: 8px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* Estilos para o seletor de idiomas mobile */
+.language-selector-mobile {
+  display: none;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-light);
+}
+
+.language-selector-mobile .language-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.language-selector-mobile .language-button {
+  padding: 8px 12px;
+  background-color: var(--gray-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  transition: var(--transition);
+}
+
+.language-selector-mobile .language-button.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .language-selector-container {
+    display: none;
+  }
+  
+  .language-selector-mobile {
+    display: block;
+  }
+}

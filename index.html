@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXACHAIN - Blockchain Híbrida para Finanças Descentralizadas</title>
+  <meta name="description" content="NEXACHAIN é uma blockchain híbrida de código aberto que combina a eficiência do XRP Ledger com a robustez do Bitcoin para finanças descentralizadas.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/nexachain_logo_transparent.png" type="image/png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/language-selector.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="images/nexachain_logo_transparent.png" alt="NEXACHAIN Logo">
+        <span class="logo-text">NEXACHAIN</span>
+      </a>
+      
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-i18n="nav_home">Início</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">Sobre</a></li>
+          <li><a href="#technology" class="nav-link" data-i18n="nav_technology">Tecnologia</a></li>
+          <li><a href="#features" class="nav-link" data-i18n="nav_features">Funcionalidades</a></li>
+          <li><a href="#tokenomics" class="nav-link" data-i18n="nav_tokenomics">Tokenomics</a></li>
+          <li><a href="#roadmap" class="nav-link" data-i18n="nav_roadmap">Roadmap</a></li>
+        </ul>
+        
+        <a href="#contact" class="btn btn-primary nav-button" data-i18n="nav_contact">Contacto</a>
+        
+        <!-- Language Selector -->
+        <div class="language-selector-container">
+          <div class="language-selector-dropdown">
+            <button class="language-selector-button">
+              <span id="current-language">PT-BR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="language-selector-dropdown-content">
+              <div class="language-option active" data-lang="pt-br">
+                <img src="https://flagcdn.com/w20/br.png" alt="Português" class="language-flag">
+                <span data-i18n="language_pt_br">Português (BR)</span>
+              </div>
+              <div class="language-option" data-lang="en">
+                <img src="https://flagcdn.com/w20/us.png" alt="English" class="language-flag">
+                <span data-i18n="language_en">English</span>
+              </div>
+              <div class="language-option" data-lang="es">
+                <img src="https://flagcdn.com/w20/es.png" alt="Español" class="language-flag">
+                <span data-i18n="language_es">Español</span>
+              </div>
+              <div class="language-option" data-lang="zh">
+                <img src="https://flagcdn.com/w20/cn.png" alt="中文" class="language-flag">
+                <span data-i18n="language_zh">中文</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="fade-in" data-i18n="hero_title">NEXACHAIN:<br>Conectando o Futuro das Finanças</h1>
+          
+          <p class="fade-in delay-200" data-i18n="hero_subtitle">
+            Uma blockchain híbrida de código aberto que combina a eficiência do XRP Ledger com a robustez do Bitcoin para finanças descentralizadas rápidas, escaláveis e sustentáveis.
+          </p>
+          
+          <div class="hero-buttons fade-in delay-300">
+            <a href="#about" class="btn btn-primary btn-lg" data-i18n="hero_button_explore">Explorar</a>
+            <a href="#" class="btn btn-outline btn-lg" data-i18n="hero_button_whitepaper">Whitepaper</a>
+          </div>
+        </div>
+        
+        <div class="hero-image fade-in delay-200">
+          <img src="images/nexachain_logo_transparent.png" alt="NEXACHAIN">
+        </div>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-card fade-in delay-100">
+          <div class="stat-value counter" data-target="1500">0</div>
+          <div class="stat-label" data-i18n="hero_stat_tps">TPS</div>
+        </div>
+        
+        <div class="stat-card fade-in delay-200">
+          <div class="stat-value">3-5s</div>
+          <div class="stat-label" data-i18n="hero_stat_confirmation">Confirmação</div>
+        </div>
+        
+        <div class="stat-card fade-in delay-300">
+          <div class="stat-value counter" data-target="100">0</div>
+          <div class="stat-label" data-i18n="hero_stat_supply">Milhões Supply</div>
+        </div>
+        
+        <div class="stat-card fade-in delay-400">
+          <div class="stat-value">Híbrido</div>
+          <div class="stat-label" data-i18n="hero_stat_consensus">Consenso</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="about_title">Sobre o Projeto</h2>
+      <p class="section-subtitle text-center mx-auto" data-i18n="about_subtitle">
+        Conheça a NEXACHAIN, uma blockchain inovadora que resolve o trilema da blockchain
+        através de um consenso híbrido e um modelo económico deflacionário.
+      </p>
+      
+      <div class="about-content">
+        <div class="about-image slide-up">
+          <img src="images/hybrid_consensus_detailed.png" alt="Blockchain Híbrida">
+        </div>
+        
+        <div class="about-text">
+          <h2 class="slide-up" data-i18n="about_heading">Uma Nova Geração de Blockchain Híbrida</h2>
+          
+          <p class="slide-up delay-100" data-i18n="about_text">
+            A NEXACHAIN é uma blockchain descentralizada que combina a eficiência e as funcionalidades avançadas do XRP Ledger (XRPL) com a robustez e descentralização do Bitcoin.
+          </p>
+          
+          <div class="feature-list">
+            <div class="feature-item slide-up delay-200">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="feature-text">
+                <h3 data-i18n="about_feature1_title">Consenso Híbrido</h3>
+                <p data-i18n="about_feature1_text">Combinação de Proof of Work (PoW) para seleção de líderes de bloco com o Ripple Protocol Consensus Algorithm (RPCA) para validação eficiente.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item slide-up delay-300">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="feature-text">
+                <h3 data-i18n="about_feature2_title">Modelo Deflacionário</h3>
+                <p data-i18n="about_feature2_text">Supply inicial de 100 milhões de tokens NEX com mecanismos de queima de taxas e halvings anuais.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item slide-up delay-400">
+              <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="feature-text">
+                <h3 data-i18n="about_feature3_title">Alta Performance</h3>
+                <p data-i18n="about_feature3_text">~1500 transações por segundo (TPS) com confirmações em 3-5 segundos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section id="technology" class="section technology">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="tech_title">Tecnologia Inovadora</h2>
+      <p class="section-subtitle text-center mx-auto" data-i18n="tech_subtitle">
+        A NEXACHAIN resolve o trilema da blockchain através de uma arquitetura técnica inovadora
+        que combina o melhor de duas tecnologias comprovadas.
+      </p>
+      
+      <div class="tech-content">
+        <div class="tech-text">
+          <h2 class="slide-up" data-i18n="tech_heading">Consenso Híbrido PoW + RPCA</h2>
+          
+          <p class="slide-up delay-100" data-i18n="tech_text">
+            A NEXACHAIN utiliza um mecanismo de consenso híbrido que combina o melhor de dois mundos:
+            a descentralização do Proof of Work (PoW) com a eficiência do Ripple Protocol Consensus Algorithm (RPCA).
+          </p>
+          
+          <div class="tech-cards">
+            <div class="tech-card slide-up delay-200">
+              <h3 data-i18n="tech_card1_title">Proof of Work (PoW)</h3>
+              <p data-i18n="tech_card1_text">
+                Qualquer nó pode minerar blocos resolvendo um desafio SHA-256, garantindo descentralização ao estilo Bitcoin. A dificuldade é ajustada dinamicamente para manter blocos a cada ~3-5 segundos.
+              </p>
+            </div>
+            
+            <div class="tech-card slide-up delay-300">
+              <h3 data-i18n="tech_card2_title">Ripple Protocol Consensus Algorithm (RPCA)</h3>
+              <p data-i18n="tech_card2_text">
+                Validadores confiáveis verificam propostas de blocos, garantindo consenso rápido e sem forks. A lista de validadores é aberta, permitindo que nós com reputação se juntem.
+              </p>
+            </div>
+            
+            <div class="tech-card slide-up delay-400">
+              <h3 data-i18n="tech_card3_title">Eficiência Energética</h3>
+              <p data-i18n="tech_card3_text">
+                O PoW é usado apenas para propor blocos, não para validação completa, reduzindo o consumo energético em comparação com o Bitcoin (~0,1-1 TWh/ano estimado para 1000 nós vs. 150 TWh/ano do BTC).
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tech-image slide-up">
+          <img src="images/technical_architecture.png" alt="Arquitetura Técnica da Blockchain">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section features">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="features_title">Funcionalidades Principais</h2>
+      <p class="section-subtitle text-center mx-auto" data-i18n="features_subtitle">
+        A NEXACHAIN oferece um conjunto completo de funcionalidades para suportar finanças descentralizadas,
+        pagamentos globais e tokenização de ativos.
+      </p>
+      
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-card-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <h3 data-i18n="features_card1_title">DEX Nativa</h3>
+          <p data-i18n="features_card1_text">
+            Exchange descentralizada integrada com order books e Automated Market Makers (AMMs).
+          </p>
+        </div>
+        
+        <div class="feature-card fade-in delay-100">
+          <div class="feature-card-icon">
+            <i class="fas fa-coins"></i>
+          </div>
+          <h3 data-i18n="features_card2_title">Tokenização</h3>
+          <p data-i18n="features_card2_text">
+            Suporte a tokens fungíveis (stablecoins) e NFTs (padrão XLS-20).
+          </p>
+        </div>
+        
+        <div class="feature-card fade-in delay-200">
+          <div class="feature-card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 data-i18n="features_card3_title">Smart Contracts</h3>
+          <p data-i18n="features_card3_text">
+            Hooks baseados em WebAssembly para lógica personalizada e eficiente.
+          </p>
+        </div>
+        
+        <div class="feature-card fade-in delay-300">
+          <div class="feature-card-icon">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <h3 data-i18n="features_card4_title">Pagamentos Avançados</h3>
+          <p data-i18n="features_card4_text">
+            Escrows, payment channels e multi-hop payments para casos de uso complexos.
+          </p>
+        </div>
+        
+        <div class="feature-card fade-in">
+          <div class="feature-card-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3 data-i18n="features_card5_title">Alta Performance</h3>
+          <p data-i18n="features_card5_text">
+            ~1500 TPS com confirmações em 3-5 segundos para uma experiência fluida.
+          </p>
+        </div>
+        
+        <div class="feature-card fade-in delay-100">
+          <div class="feature-card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 data-i18n="features_card6_title">Segurança Robusta</h3>
+          <p data-i18n="features_card6_text">
+            Proteção contra ataques de 51%, double-spending e outros vetores de ataque.
+          </p>
+        </div>
+      </div>
+      
+      <div class="mt-16 text-center">
+        <img src="images/use_cases.png" alt="Casos de Uso da NEXACHAIN" class="mx-auto" style="max-width: 800px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="section tokenomics">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="tokenomics_title">Tokenomics</h2>
+      <p class="section-subtitle text-center mx-auto" data-i18n="tokenomics_subtitle">
+        O modelo económico da NEXACHAIN foi projetado para criar escassez e valor crescente ao longo do tempo,
+        através de um supply limitado e mecanismos deflacionários.
+      </p>
+      
+      <div class="tokenomics-content">
+        <div class="token-info slide-up">
+          <h3 data-i18n="tokenomics_token_title">Token NEX</h3>
+          
+          <div class="token-details">
+            <div class="token-detail-item">
+              <span data-i18n="tokenomics_supply">Supply Inicial</span>
+              <span data-i18n="tokenomics_supply_value">100.000.000 NEX</span>
+            </div>
+            <div class="token-detail-item">
+              <span data-i18n="tokenomics_symbol">Símbolo</span>
+              <span data-i18n="tokenomics_symbol_value">NEX</span>
+            </div>
+            <div class="token-detail-item">
+              <span data-i18n="tokenomics_decimals">Decimais</span>
+              <span data-i18n="tokenomics_decimals_value">6 (1 NEX = 1.000.000 drops)</span>
+            </div>
+            <div class="token-detail-item">
+              <span data-i18n="tokenomics_type">Tipo</span>
+              <span data-i18n="tokenomics_type_value">Utility Token</span>
+            </div>
+            <div class="token-detail-item">
+              <span data-i18n="tokenomics_blockchain">Blockchain</span>
+              <span data-i18n="tokenomics_blockchain_value">NEXACHAIN (Nativa)</span>
+            </div>
+          </div>
+          
+          <div class="token-chart">
+            <h3 class="mb-4" data-i18n="tokenomics_distribution">Distribuição de Tokens</h3>
+            <div class="mb-8">
+              <img src="images/tokenomics_detailed.png" alt="Distribuição de Tokens">
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex items-center gap-2">
+                <div style="width: 16px; height: 16px; background-color: #1E56A0; border-radius: 50%;"></div>
+                <div data-i18n="tokenomics_mining">Mineração (50%)</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div style="width: 16px; height: 16px; background-color: #F6C667; border-radius: 50%;"></div>
+                <div data-i18n="tokenomics_development">Desenvolvimento (30%)</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div style="width: 16px; height: 16px; background-color: #3A7BD5; border-radius: 50%;"></div>
+                <div data-i18n="tokenomics_investors">Investidores (15%)</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div style="width: 16px; height: 16px; background-color: #FFDA8A; border-radius: 50%;"></div>
+                <div data-i18n="tokenomics_community">Comunidade (5%)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="token-info slide-up delay-200">
+          <h3 data-i18n="tokenomics_deflationary_title">Modelo Deflacionário</h3>
+          
+          <div class="mb-6">
+            <p data-i18n="tokenomics_deflationary_text">
+              A NEXACHAIN implementa um modelo económico deflacionário através de vários mecanismos que reduzem o supply total ao longo do tempo.
+            </p>
+          </div>
+          
+          <div class="tech-cards">
+            <div class="tech-card">
+              <h3 data-i18n="tokenomics_burn_title">Queima de Taxas</h3>
+              <p data-i18n="tokenomics_burn_text">
+                Cada transação queima uma taxa base (0,0001 NEX). Com 1000 TPS, aproximadamente 3,15M NEX são queimados por ano.
+              </p>
+            </div>
+            
+            <div class="tech-card">
+              <h3 data-i18n="tokenomics_halving_title">Halvings de Recompensa</h3>
+              <p data-i18n="tokenomics_halving_text">
+                Recompensa inicial: 10 NEX por bloco. Halving a cada 1 ano: 10 NEX → 5 NEX → 2,5 NEX, etc.
+              </p>
+            </div>
+            
+            <div class="tech-card">
+              <h3 data-i18n="tokenomics_additional_title">Queima Adicional</h3>
+              <p data-i18n="tokenomics_additional_text">
+                0,1% do valor de transações na DEX é queimado. Criação de NFTs e execução de smart contracts podem incluir queima opcional.
+              </p>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <h3 class="mb-4" data-i18n="tokenomics_projection_title">Projeção de Supply</h3>
+            <p class="mb-4" data-i18n="tokenomics_projection_text">
+              Após aproximadamente 4 anos (2 halvings), a queima deve superar a emissão, tornando o NEX deflacionário.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="section roadmap">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="roadmap_title">Roadmap</h2>
+      <p class="section-subtitle text-center mx-auto" data-i18n="roadmap_subtitle">
+        Nosso plano de desenvolvimento detalhado para transformar a NEXACHAIN em uma infraestrutura
+        líder para finanças descentralizadas.
+      </p>
+      
+      <div class="mb-12 text-center">
+        <img src="images/roadmap_illustration.png" alt="Roadmap da NEXACHAIN" class="mx-auto" style="max-width: 800px;">
+      </div>
+      
+      <div class="roadmap-tabs">
+        <div class="roadmap-tab" data-i18n="roadmap_tab1">Fases Concluídas</div>
+        <div class="roadmap-tab" data-i18n="roadmap_tab2">Fase Atual</div>
+        <div class="roadmap-tab" data-i18n="roadmap_tab3">Próximas Fases</div>
+      </div>
+      
+      <!-- Fases Concluídas -->
+      <div class="roadmap-content">
+        <div class="roadmap-timeline">
+          <div class="roadmap-item">
+            <div class="roadmap-date" data-i18n="roadmap_phase1_date">Q2 2025</div>
+            <h3 class="roadmap-title" data-i18n="roadmap_phase1_title">Conceito e Pesquisa</h3>
+            <p class="roadmap-description" data-i18n="roadmap_phase1_text">Desenvolvimento do conceito da NEXACHAIN, pesquisa de tecnologias e elaboração do whitepaper inicial.</p>
+            
+            <div class="roadmap-milestones">
+              <div class="roadmap-milestone" data-i18n="roadmap_phase1_milestone1">Definição do conceito de blockchain híbrida</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase1_milestone2">Pesquisa sobre consenso PoW + RPCA</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase1_milestone3">Elaboração do whitepaper</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase1_milestone4">Análise de viabilidade técnica</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Fase Atual -->
+      <div class="roadmap-content">
+        <div class="roadmap-timeline">
+          <div class="roadmap-item">
+            <div class="roadmap-date" data-i18n="roadmap_phase2_date">Q3 2025</div>
+            <h3 class="roadmap-title" data-i18n="roadmap_phase2_title">Lançamento da Testnet</h3>
+            <p class="roadmap-description" data-i18n="roadmap_phase2_text">Implementação de uma rede de teste com 3 nós para validar a estabilidade e performance da rede.</p>
+            
+            <div class="roadmap-milestones">
+              <div class="roadmap-milestone" data-i18n="roadmap_phase2_milestone1">Implementação do consenso híbrido</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase2_milestone2">Testes de stress do mecanismo de consenso</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase2_milestone3">Testes da DEX e tokenização</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase2_milestone4">Publicação da documentação inicial</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Próximas Fases -->
+      <div class="roadmap-content">
+        <div class="roadmap-timeline">
+          <div class="roadmap-item">
+            <div class="roadmap-date" data-i18n="roadmap_phase3_date">Q4 2025</div>
+            <h3 class="roadmap-title" data-i18n="roadmap_phase3_title">Abertura do Código-Fonte</h3>
+            <p class="roadmap-description" data-i18n="roadmap_phase3_text">O código-fonte completo do projeto será tornado público para a comunidade.</p>
+            
+            <div class="roadmap-milestones">
+              <div class="roadmap-milestone" data-i18n="roadmap_phase3_milestone1">Publicação do código no GitHub</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase3_milestone2">Integração de Hooks (smart contracts)</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase3_milestone3">Suporte a NFTs (XLS-20)</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase3_milestone4">Programa de Bug Bounty</div>
+            </div>
+          </div>
+          
+          <div class="roadmap-item">
+            <div class="roadmap-date" data-i18n="roadmap_phase4_date">Q1 2026</div>
+            <h3 class="roadmap-title" data-i18n="roadmap_phase4_title">Lançamento da Mainnet</h3>
+            <p class="roadmap-description" data-i18n="roadmap_phase4_text">Lançamento oficial da rede principal da NEXACHAIN com 100 nós iniciais.</p>
+            
+            <div class="roadmap-milestones">
+              <div class="roadmap-milestone" data-i18n="roadmap_phase4_milestone1">Lançamento da rede principal</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase4_milestone2">Venda inicial de 15M tokens NEX</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase4_milestone3">Listagem em exchanges</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase4_milestone4">Expansão da comunidade de desenvolvedores</div>
+            </div>
+          </div>
+          
+          <div class="roadmap-item">
+            <div class="roadmap-date" data-i18n="roadmap_phase5_date">Q2 2026</div>
+            <h3 class="roadmap-title" data-i18n="roadmap_phase5_title">Expansão do Ecossistema</h3>
+            <p class="roadmap-description" data-i18n="roadmap_phase5_text">Desenvolvimento e integração de sidechains, incluindo uma sidechain compatível com a EVM.</p>
+            
+            <div class="roadmap-milestones">
+              <div class="roadmap-milestone" data-i18n="roadmap_phase5_milestone1">Integração de sidechains</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase5_milestone2">Compatibilidade com EVM</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase5_milestone3">Parcerias estratégicas</div>
+              <div class="roadmap-milestone" data-i18n="roadmap_phase5_milestone4">Fundo de desenvolvimento para projetos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section id="comparison" class="section comparison">
+    <div class="container">
+      <h2 class="section-title text-center">Comparação com Outras Blockchains</h2>
+      <p class="section-subtitle text-center mx-auto">
+        Veja como a NEXACHAIN se compara com outras blockchains importantes do mercado em termos de performance, segurança e funcionalidades.
+      </p>
+      
+      <div class="mt-16 text-center">
+        <img src="images/blockchain_comparison.png" alt="Comparação com Outras Blockchains" class="mx-auto" style="max-width: 900px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Transaction Process Section -->
+  <section id="transaction" class="section transaction">
+    <div class="container">
+      <h2 class="section-title text-center">Processo de Transação</h2>
+      <p class="section-subtitle text-center mx-auto">
+        Entenda como as transações são processadas na NEXACHAIN, desde o início até a confirmação final.
+      </p>
+      
+      <div class="mt-16 text-center">
+        <img src="images/transaction_process.png" alt="Processo de Transação" class="mx-auto" style="max-width: 900px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="cta">
+    <div class="container">
+      <h2 class="fade-in" data-i18n="cta_title">Junte-se à Revolução NEXACHAIN</h2>
+      <p class="fade-in delay-100" data-i18n="cta_text">
+        Seja parte do futuro das finanças descentralizadas. Contribua com o desenvolvimento,
+        explore a tecnologia ou prepare-se para investir na NEXACHAIN.
+      </p>
+      
+      <div class="cta-buttons fade-in delay-200">
+        <a href="#" class="btn btn-secondary btn-lg" data-i18n="cta_button1">GitHub</a>
+        <a href="#" class="btn btn-outline btn-lg" data-i18n="cta_button2">Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo">
+            <img src="images/nexachain_logo_transparent.png" alt="NEXACHAIN Logo">
+            <span class="footer-logo-text">NEXACHAIN</span>
+          </div>
+          <p class="footer-description" data-i18n="footer_description">
+            Uma blockchain híbrida de código aberto que combina a eficiência do XRP Ledger com a robustez do Bitcoin.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title" data-i18n="footer_links_title">Links Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+            <li><a href="#technology" data-i18n="nav_technology">Tecnologia</a></li>
+            <li><a href="#features" data-i18n="nav_features">Funcionalidades</a></li>
+            <li><a href="#tokenomics" data-i18n="nav_tokenomics">Tokenomics</a></li>
+            <li><a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title" data-i18n="footer_resources_title">Recursos</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="footer_whitepaper">Whitepaper</a></li>
+            <li><a href="#" data-i18n="footer_documentation">Documentação</a></li>
+            <li><a href="#" data-i18n="footer_github">GitHub</a></li>
+            <li><a href="#" data-i18n="footer_blog">Blog</a></li>
+            <li><a href="#" data-i18n="footer_faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title" data-i18n="footer_contact_title">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:contact@nexachain.org">contact@nexachain.org</a></li>
+            <li><a href="https://twitter.com/NexaChain">@NexaChain</a></li>
+            <li><a href="https://github.com/nexachain">github.com/nexachain</a></li>
+            <li><a href="https://nexachain.org">nexachain.org</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright" data-i18n="footer_copyright">
+          &copy; 2025 NEXACHAIN. Todos os direitos reservados.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#" data-i18n="footer_privacy">Política de Privacidade</a>
+          <a href="#" data-i18n="footer_terms">Termos de Uso</a>
+          <a href="#" data-i18n="footer_cookies">Política de Cookies</a>
+        </div>
+      </div>
+      
+      <!-- Language Selector Mobile -->
+      <div class="language-selector-mobile">
+        <h4 data-i18n="language_selector">Idioma</h4>
+        <div class="language-options">
+          <button class="language-button active" data-lang="pt-br" data-i18n="language_pt_br">Português (BR)</button>
+          <button class="language-button" data-lang="en" data-i18n="language_en">English</button>
+          <button class="language-button" data-lang="es" data-i18n="language_es">Español</button>
+          <button class="language-button" data-lang="zh" data-i18n="language_zh">中文</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/translations/pt-br.js"></script>
+  <script src="js/translations/en.js"></script>
+  <script src="js/translations/es.js"></script>
+  <script src="js/translations/zh.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Inicializar o seletor de idiomas
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dropdown do seletor de idiomas
+      const languageButton = document.querySelector('.language-selector-button');
+      const languageDropdown = document.querySelector('.language-selector-dropdown-content');
+      const languageOptions = document.querySelectorAll('.language-option');
+      const currentLanguageText = document.getElementById('current-language');
+      
+      if (languageButton) {
+        languageButton.addEventListener('click', function() {
+          languageDropdown.classList.toggle('show');
+        });
+        
+        // Fechar o dropdown quando clicar fora dele
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.language-selector-dropdown')) {
+            languageDropdown.classList.remove('show');
+          }
+        });
+        
+        // Opções de idioma
+        languageOptions.forEach(option => {
+          option.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+            
+            // Atualizar texto do botão
+            currentLanguageText.textContent = lang.toUpperCase();
+            
+            // Fechar dropdown
+            languageDropdown.classList.remove('show');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
